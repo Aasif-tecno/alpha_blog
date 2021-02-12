@@ -1,20 +1,25 @@
 <h1> Articles Listing page</h1>
 
-<table>
-    <thead>
-        <tr>
-            <th><strong>TITLE</strong></th>
-            <th><strong>DESCRIPTION</strong></th>
-            <th><strong>ACTIONS</strong></th>
-        </tr>
-    </thead>
-    <tbody>
-    <% @articles.each do |article|%>
-        <tr>
-            <td><%= article.title %></td>
-            <td><%= article.description %></td>
-            <td>Placeholder</td>
-        </tr>
-    <%end%>
-    </tbody>
-</table>
+    <table>
+        <thead>
+            <tr>
+                <th><strong>TITLE</strong></th>
+                <th><strong>DESCRIPTION</strong></th>
+                <th colspan="3"><strong>ACTIONS</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+        <% @articles.each do |article|%>
+            <tr>
+                <td><%= article.title %></td>
+                <td><%= article.description %></td>
+                <td><%= link_to "Show" , article_path(article) %></td>
+                <td><%= link_to "edit" , edit_article_path(article.id) %></td>
+                <td><%= link_to "Delete", article_path(article), method: :delete , data: { confirm: "Are you sure?"}%></td>
+            </tr>
+        <%end%>
+        </tbody>
+    </table>
+    <p>
+      <%= link_to "Creat new Article", new_article_path %> 
+    </p>
