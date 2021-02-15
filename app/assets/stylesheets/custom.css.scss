@@ -2,10 +2,11 @@
 
 
 .navbar{
-    background-color :black !important
+    background-color :black !important;
+    color: white;
 }
 .nav-link{
-    color: white !important;;
+    color: white !important;
 }
 #logo{
     font-size: 1.7rem;
@@ -30,7 +31,7 @@
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
 }
 
 #page-content {
@@ -46,8 +47,10 @@ body {
 }
 footer{
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  margin-bottom: 0px;
+
 
 }
 /* Other Classes for Page Styling */
