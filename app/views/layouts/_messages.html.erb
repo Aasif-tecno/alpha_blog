@@ -1,3 +1,8 @@
 <% flash.each do |name, msg| %>
-<%= msg %>
+<% if notice %>
+  <div class="alert alert-info">
+    <%= msg %>
+  </div>
+  <% end%>
 <% end %>
+

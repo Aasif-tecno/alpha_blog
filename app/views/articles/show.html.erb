@@ -1,8 +1,18 @@
-<h1> showing article details</h1>
 
-<p><strong> Title: </strong><%= @article.title %></p>
-<p><strong> description: </strong><%= @article.description %></p>
+<div class="card mt-5">
+    <h4 class="card-header">Showing article details</h4>
+    <div class="card-body">
+      <h5 class="card-title"> Title: </h5>
+        <p class="card-text"><%= @article.title %></p>
+      <h5 class="card-title"> Description:</h5>
+      <p class="card-text"><%= @article.description %></p>
+      <%= link_to "Edit" , edit_article_path(@article) ,class:"btn btn-primary"%> 
+      <%= link_to "Delete", article_path(@article), method: :delete , data: { confirm: "Are you sure?"}, class:"btn btn-danger"%> 
+      <%= link_to "Return to articles listing", articles_path, class:"btn btn-info"%>
+    </div>
+  </div>
+  <br/>
+  <br/>
 
-<td><%= link_to "Edit" , edit_article_path(@article) %></td> |
-<td><%= link_to "Delete", article_path(@article), method: :delete , data: { confirm: "Are you sure?"} %></td>|
-<td><%= link_to "Return to articles listing", articles_path %></td>
+
+

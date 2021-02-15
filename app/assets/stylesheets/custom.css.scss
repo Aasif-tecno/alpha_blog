@@ -1,0 +1,67 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+
+.navbar{
+    background-color :black !important
+}
+.nav-link{
+    color: white !important;;
+}
+#logo{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+    color: white;
+}
+
+#home-container{
+    margin-top: 25px;
+}
+
+.jumbotron{
+    background-image: url(https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzV8fHdyaXRpbmd8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 500px;
+}
+/* Sticky Footer Classes */
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+//   background-color: black;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: black !important;
+  color: white !important;
+
+}
+footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+
+}
+/* Other Classes for Page Styling */
+
+body {
+  background:gray;  
+  background: linear-gradient(to right, #f58634, #ffcc29);
+  height: 100vh;
+
+}
+
+.btn a{
+    color: white  !important;
+}
+.table{
+
+}

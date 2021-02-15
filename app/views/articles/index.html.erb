@@ -1,25 +1,26 @@
+<br/>
 <h1> Articles Listing page</h1>
-
-    <table>
-        <thead>
+<br/>
+    <table class="table table-striped table-bordered table-dark">
+        <thead class="table-dark">
             <tr>
-                <th><strong>TITLE</strong></th>
-                <th><strong>DESCRIPTION</strong></th>
-                <th colspan="3"><strong>ACTIONS</strong></th>
+                <th scope="col">TITLE</th>
+                <th scope="col">DESCRIPTION</th>
+                <th scope="col" colspan="3">ACTIONS</th>
             </tr>
         </thead>
         <tbody>
         <% @articles.each do |article|%>
             <tr>
-                <td><%= article.title %></td>
-                <td><%= article.description %></td>
-                <td><%= link_to "Show" , article_path(article) %></td>
-                <td><%= link_to "edit" , edit_article_path(article.id) %></td>
-                <td><%= link_to "Delete", article_path(article), method: :delete , data: { confirm: "Are you sure?"}%></td>
+                <td><p><%= article.title %></p></td>
+                <td><p><%= article.description %></p></td>
+                <td><%= link_to "Show" , article_path(article), class:"btn btn-info"%></td>
+                <td><%= link_to "edit" , edit_article_path(article.id) ,class:"btn btn-primary"%></td>
+                <td><%= link_to "Delete", article_path(article), method: :delete , data: { confirm: "Are you sure?"}, class:"btn btn-danger"%></td>
             </tr>
         <%end%>
         </tbody>
     </table>
-    <p>
+    <p class="btn btn-primary">
       <%= link_to "Creat new Article", new_article_path %> 
     </p>
