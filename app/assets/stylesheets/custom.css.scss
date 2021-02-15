@@ -36,6 +36,7 @@ body {
 
 #page-content {
   flex: 1 0 auto;
+  color: black;
 //   background-color: black;
 }
 
@@ -47,7 +48,7 @@ body {
 }
 footer{
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
   margin-bottom: 0px;
 
@@ -57,7 +58,7 @@ footer{
 
 body {
   background:gray;  
-  background: linear-gradient(to right,#f8dc81,yellow);
+  background: linear-gradient(to right,#f8dc81,#fff3e6);
   height: 100vh;
 
 }
