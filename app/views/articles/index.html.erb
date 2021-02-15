@@ -11,8 +11,8 @@
             </tr>
         </thead>
         <tbody>
-        <% @articles.each do |article|%>
-        <% if article.user == current_user %>
+        <% @articles.each do  |article|%>
+        <% if article.user == current_user %> 
 
             <tr>
                 <td> <%= article.user_id %></td>
