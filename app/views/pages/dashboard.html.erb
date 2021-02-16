@@ -1,0 +1,16 @@
+<h1 class="text-center mt-4"></h1>
+<div class="card text-center">
+  <div class="card-header">
+  <h3><%= current_user.email %>'s profile</h3>
+  </div>
+  <div class="card-body">
+    <%= gravatar_for current_user, size: 200 %> <br/>
+    <%= link_to "Edit Profile", edit_user_registration_path, class:"btn btn-primary" %>
+  </div>
+  <div class="card-footer text-muted">
+     Joined <%= time_ago_in_words(current_user.created_at)%>
+  </div>
+</div>
+
+  <%= render 'articles/article' %>
+

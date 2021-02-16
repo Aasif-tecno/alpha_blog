@@ -9,9 +9,9 @@
       <% if @article.user == current_user %>
       <%= link_to "Edit" , edit_article_path(@article) ,class:"btn btn-primary"%> 
       <%= link_to "Delete", article_path(@article), method: :delete , data: { confirm: "Are you sure?"}, class:"btn btn-danger"%> 
-      <%= link_to "Return to articles listing", articles_path, class:"btn btn-info"%>
+      <%= link_to "Return to articles listing", all_articles_path, class:"btn btn-info"%>
       <% else %>
-       <%= link_to "Articles listing", root_path, class:"btn btn-info"%>
+       <%= link_to "Articles listing", all_articles_path, class:"btn btn-info"%>
        <% end %>
     </div>
   </div>

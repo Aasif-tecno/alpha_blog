@@ -1,0 +1,31 @@
+<h1 class="text-center mt-4">Users profile</h1>
+
+<br/>
+    <table class="table table-striped table-bordered table-dark table-hover">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Email ID</th>
+                <th>Avatar</th>
+                <th>No of Articles</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        <% @users.each do  |user|%>
+        <%# <% if article.user == current_user %> 
+
+            <tr>
+                <%# <td> <%= current_user.email.split("@")[0].capitalize %>
+                <td><%= user.id %></td>
+                <td><%= user.email %></td>
+                <td><%= gravatar_for user, size: 50 %>
+                <td><%= user.articles.count %></td>
+                <td><%= link_to "View Profile" , dashboard_path(user), class:"btn btn-info"%></td>
+                
+           
+            </tr>
+            <%# <% end %>
+        <% end %>
+        </tbody>
+    </table>
