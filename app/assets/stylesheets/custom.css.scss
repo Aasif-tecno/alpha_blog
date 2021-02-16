@@ -7,6 +7,8 @@
 }
 .nav-link{
     color: white !important;
+    margin: 10px;
+
 }
 #logo{
     font-size: 1.7rem;
@@ -18,6 +20,7 @@
 
 #home-container{
     margin-top: 25px;
+  
 }
 
 .jumbotron{
@@ -27,31 +30,25 @@
     color: white;
     height: 500px;
 }
-/* Sticky Footer Classes */
+
 
 html,
 body {
   height: 100vh;
 }
 
-#page-content {
-  flex: 1 0 auto;
-  color: black;
-//   background-color: black;
-}
 
-#sticky-footer {
-  flex-shrink: none;
+// #sticky-footer {
+//   t;
+//}flex-shrink: none;
+//   
+#footer{
   background-color: black !important;
   color: white !important;
-
-}
-footer{
   width: 100%;
   position: fixed;
   bottom: 0;
   margin-bottom: 0px;
-
 
 }
 /* Other Classes for Page Styling */

@@ -1,14 +1,12 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
 <div class="card">
   <div class="card-header">
    <h3>Edit Profile <% resource_name.to_s.humanize %></h3>
 
   </div>
   <div class="card-body">
-   
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field form-group">
+   <div class="field form-group">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control", placeholder:"example@yahoo.com"  %><br/>
   </div>
