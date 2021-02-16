@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   root 'pages#home'
   get 'about' , to: 'pages#about'
+  get 'all_articles' , to: 'pages#articles'
   resources :articles
 end

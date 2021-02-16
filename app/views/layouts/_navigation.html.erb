@@ -13,7 +13,9 @@
            <%= link_to "About Page " , about_path, class:"nav-link" %>
           </li>
           <% if user_signed_in? %>
-          
+          <li class="nav-item">
+            <%= link_to "Articles", all_articles_path, class:"nav-link" %>
+          </li>
           <li class="nav-item">
             <%= link_to "Edit Profile", edit_user_registration_path, class:"nav-link" %>
           </li>
@@ -45,10 +47,7 @@
          <span class="navbar-text text-white">
       Loged in as:
            <%= link_to current_user.email.split("@")[0].capitalize , articles_path %>
-    </span>
-         <span class="navbar-text text-white">
-            <%= link_to "Aticles", articles_path, class:"nav-link" %>
-         </span>
+        </span>&nbsp &nbsp
         <% end %>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
